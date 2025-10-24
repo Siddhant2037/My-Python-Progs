@@ -1,0 +1,46 @@
+Information About Program:-
+
+Program is created by:-Siddhant Tak
+Motive of this program:-To make daily life easy
+
+*Requirements of the program:-
+1)Internet Connectivity
+2)All the required python modules and packages should be installed in your terminal(i.e in your interpreter)
+3)Modules required:-
+  a.pywhatkit
+  b.subprocess
+  c.os
+  d.webbrowser
+  e.wikipedia
+  f.pyttsx3
+  g.speech_recognition
+  h.datetime
+  i.googletrans
+  j.selenium
+  k.openai
+  l.twilio
+  
+
+Functions of the program:-
+
+1)It can open Youtube and can search whatever the user required
+2)Can open spotify to play music (Note:-location of the application can vary as per the device and user)  
+3)Can play videos on VLC (Note:-location of the application can vary as per the device and user)
+4)Can calculate Mathematical operation which are nat possible for human brain or advanced calculations
+5)Google can be open using this program
+6)Easy to send messages on WhatsApp only by dictating it to the device and the messages will be sent automatically 
+(Note:-Contact names and numbes should be uploaded to the program as per the user want)
+7)Some other sample programs (like ticket booking program) one of owners recent program can be operated by this mega program
+8)It can perform the task as fitness trainer as it will keep all your daily data stored to maintain your fitness
+9)User can also use this program for fun as it consists of games like stone,paper,scissor 
+10)As it is multifunctional program user can also use it as a translator as it can conver your English sentences to differet languages
+11)User can get any required information in the world as Wikipedia is already added in the program 
+12)the most important feature about this program is that if user pass any task which is not possible to handle for this program then the task will be autiomatically forwarded to google
+
+Updates coming Soon:-
+
+1)All features of Openai will be added using openai api
+2)Musicplayer will be added
+3)Using web inspection advanced features will be added and many more
+
+To be continued.....  

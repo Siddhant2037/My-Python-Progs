@@ -1,0 +1,206 @@
+try:
+    print("\n\t\t\t\t\t\t\t\t**WELCOME TO SIDDHANTS PROGRAMMING WORLD**\n")
+    import time
+    def countdown(c):
+        r=0
+        a=1
+        while c:
+            m,s = divmod(c, 60)
+            timer = '{:02d}:{:02d}'.format(m, s)
+            print(timer, end="\r")
+            time.sleep(1)
+            c-=1
+            sid=str.capitalize(input("At which difficulty level do you want to play\n1)Easy\n2)Modrate\n3)Hard\n4)Hell"))
+            while c:
+                m, s = divmod(c, 60)
+                timer = '{:010d}:{:010d}'.format(s, s)
+                print(timer, end="\r")
+                time.sleep(1)
+                c -=1
+                if c==0:
+                    print(f"Your score={r}\nTotal attempts={a-1}\t\t\t\tACCURACY={r/(a-1)*100}%")
+                    break
+
+        #For EASY LEVEL:-
+
+                if sid=='Easy':
+                    from random import randint
+                    list = ['*', '+', '-']
+                    import random
+                    t = random.choice(list)
+                    if t == '*':
+                        p = randint(1, 10)
+                        p2=randint(1,20)
+                        print(f"Q{a})={p}*{p2}")
+                        t = int(input("Write Your Answer="))
+                        a=a+1
+                        if t == p * p2:
+                            print("correct")
+                            r=r+1
+                        else:
+                            print("Incorrect Answer")
+                    elif t == '+':
+                        p = randint(10, 99)
+                        p2 = randint(1,100)
+                        print(f"Q{a})={p}+{p2}")
+                        t = int(input("Write Your Answer="))
+                        a = a + 1
+                        if t == p + p2:
+                            print("correct")
+                            r=r+1
+                        else:
+                            print("Incorrect Answer")
+                    elif t == '-':
+                        p = randint(10, 99)
+                        p2=randint(-100,-10)
+                        print(f"Q{a})={p}{p2}")
+                        t = int(input("Write Your Answer="))
+                        a=a+1
+                        if t == p + p2:
+                            print("correct")
+                            r=r+1
+                        else:
+                            print("Incorrect Answer")
+
+        #FOR MODRATE LEVEL:-
+
+                elif sid=='Modrate':
+                    from random import randint
+                    list = ['*', '+', '-']
+                    import random
+                    t = random.choice(list)
+                    if t == '*':
+                        p = randint(1, 10)
+                        p2=randint(1,25)
+                        print(f"Q{a})={p}*{p2}")
+                        t = int(input("Write Your Answer="))
+                        a=a+1
+                        if t == p*p2:
+                            print("correct")
+                            r=r+1
+                        else:
+                            print("Incorrect Answer")
+                    elif t == '+':
+                        p = randint(10,99)
+                        p2 = randint(1,100)
+                        p3=randint(1,10)
+                        print(f"Q{a})={p}+{p2}-{p3}")
+                        t = int(input("Write Your Answer="))
+                        a = a + 1
+                        if t == p + p2-p3:
+                            print("correct")
+                            r=r+1
+                        else:
+                            print("Incorrect Answer")
+                    elif t == '-':
+                        p = randint(10, 99)
+                        p2=randint(-100,-10)
+                        p3=randint(1,50)
+                        print(f"Q{a})={p}{p2}+{p3}")
+                        t = int(input("Write Your Answer="))
+                        a=a+1
+                        if t == p+p2+p3:
+                            print("correct")
+                            r=r+1
+                        else:
+                            print("Incorrect Answer")
+
+    #FOR HARD LEVEL:-
+
+                elif sid=='Hard':
+                    from random import randint
+                    list = ['*', '+', '-']
+                    import random
+                    t = random.choice(list)
+                    if t == '*':
+                        p = randint(1, 10)
+                        p2=randint(1,20)
+                        p3=randint(1,5)
+                        print(f"Q{a})=({p}+{p2})*{p3}")
+                        t = int(input("Write Your Answer="))
+                        a=a+1
+                        if t == (p+p2)*p3:
+                            print("correct")
+                            r=r+1
+                        else:
+                            print("Incorrect Answer")
+                    elif t == '+':
+                        p = randint(10, 99)
+                        p2 = randint(1,100)
+                        p3=randint(100,1000)
+                        print(f"Q{a})={p}+{p2}+{p3}")
+                        t = int(input("Write Your Answer="))
+                        a = a + 1
+                        if t == p + p2+p3:
+                            print("correct")
+                            r=r+1
+                        else:
+                            print("Incorrect Answer")
+                    elif t == '-':
+                        p = randint(10, 99)
+                        p2=randint(-100,-10)
+                        p3=randint(100,1000)
+                        print(f"Q{a})={p}{p2}+{p3}")
+                        t = int(input("Write Your Answer="))
+                        a=a+1
+                        if t == p+p2+p3:
+                            print("correct")
+                            r=r+1
+
+
+    #FOR HELL LEVEL:-
+
+                elif sid == 'Hell':
+                    from random import randint
+                    list = ['*', '+', '-']
+                    import random
+                    t = random.choice(list)
+                    if t == '*':
+                        p = randint(1, 10)
+                        p2 = randint(1, 20)
+                        p3 = randint(1, 10)
+                        p4 = randint(100, 1000)
+                        print(f"Q{a})=({p}+{p2})*{p3}+{p4}")
+                        t = int(input("Write Your Answer="))
+                        a = a + 1
+                        if t == (p + p2) * p3 + p4:
+                            print("correct")
+                            r = r + 1
+                        else:
+                            print("Incorrect Answer")
+                    elif t == '+':
+                        p = randint(10, 99)
+                        p2 = randint(1, 100)
+                        p3 = randint(1000, 1500)
+                        p4 = randint(1, 50)
+                        print(f"Q{a})={p}+{p2}+{p3}-{p4}")
+                        t = int(input("Write Your Answer="))
+                        a = a + 1
+                        if t == p+p2+p3-p4:
+                            print("correct")
+                            r = r + 1
+                        else:
+                            print("Incorrect Answer")
+
+                    elif t == '-':
+                        p = randint(10, 99)
+                        p2 = randint(1, 100)
+                        p3 = randint(1,12)
+                        p4 = randint(100,1000)
+                        print(f"Q{a})=(({p}+{p2})+{p4})*{p3}")
+                        t = int(input("Write Your Answer="))
+                        a=a+1
+                        if t == ((p+p2)+p4)*p3:
+                            print("correct")
+                            r = r + 1
+                        else:
+                            print("Incorrect Answer")
+
+
+    # input the time value in seconds
+    c = input("For how much time period do you want to play game enter in sec: ")
+    # function call at the program
+    countdown(int(c))
+    print('Game over!!')
+except Exception as e:
+    print("Something went wrong")
